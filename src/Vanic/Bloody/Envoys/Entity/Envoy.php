@@ -33,7 +33,7 @@ class Envoy extends Human implements ChunkLoader {
 		$this->setScale($this->tier * 0.3 + 1);
 		$this->progress = 10 * $this->tier;
 
-		$this->setImmobile();
+		$this->setNoClientPredictions();
 		$this->setNameTagAlwaysVisible();
 		$this->setNameTag("§f§l". $data["displayname"] ."\n§7Smash to open!");
 		$this->setScoreTag("§l§8(§7PROGRESS§8)§r\n" . Utils::createProgressBar($this->getProgress(), $this->getProgress()));
